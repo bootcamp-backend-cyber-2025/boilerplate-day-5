@@ -10,9 +10,9 @@ const CourseSchema: Schema = new Schema(
   {
     title: { type: String, required: true },
     slug: { type: String },
-    description: { type: String, required: true },
+    description: { type: String },
   },
   { timestamps: true },
 );
 
-export const User = mongoose.model<CourseData>('Course', CourseSchema);
+export const Course = mongoose.model<CourseData>('Course', CourseSchema);
